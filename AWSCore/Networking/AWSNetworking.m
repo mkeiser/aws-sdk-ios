@@ -14,7 +14,9 @@
  */
 
 #import "AWSNetworking.h"
+#if TARGET_OS_IPHONE
 #import <UIKit/UIKit.h>
+#endif
 #import <Bolts/Bolts.h>
 #import "AWSCategory.h"
 #import "AWSModel.h"
@@ -321,8 +323,15 @@ NSString *const AWSiOSSDKVersion = @"2.1.2";
     static NSString *_userAgent = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
+
+#if TARGET_OS_IPHONE
         NSString *systemName = [[[UIDevice currentDevice] systemName] stringByReplacingOccurrencesOfString:@" " withString:@"-"];
         NSString *systemVersion = [[UIDevice currentDevice] systemVersion];
+#else
+		NSString *systemName = @"OSX";
+		NSOperatingSystemVersion osxVersion = [[NSProcessInfo processInfo] operatingSystemVersion];
+		NSString *systemVersion = [NSString stringWithFormat:@"%li.%li.%li", (long)osxVersion.majorVersion, (long)osxVersion.minorVersion, (long)osxVersion.patchVersion];
+#endif
         NSString *localeIdentifier = [[NSLocale currentLocale] localeIdentifier];
         _userAgent = [NSString stringWithFormat:@"aws-sdk-iOS/%@ %@/%@ %@", AWSiOSSDKVersion, systemName, systemVersion, localeIdentifier];
     });
