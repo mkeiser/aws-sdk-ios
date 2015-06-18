@@ -10,8 +10,8 @@ Pod::Spec.new do |s|
   s.license      = 'Apache License, Version 2.0'
   s.author       = { 'Amazon Web Services' => 'amazonwebservices' }
   s.platform     = :ios, '7.0'
-  s.source       = { :git => 'https://github.com/aws/aws-sdk-ios.git',
-                     :tag => s.version}
+  s.source       = { :git => 'https://github.com/mkeiser/aws-sdk-ios.git',
+                     :tag => 'OSX_2.1.2'}
   s.frameworks   = 'UIKit', 'Foundation', 'SystemConfiguration'
   s.requires_arc = true
   s.dependency 'Bolts', '~> 1.1.0'
