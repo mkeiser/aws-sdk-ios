@@ -9,10 +9,13 @@ Pod::Spec.new do |s|
   s.homepage     = 'http://aws.amazon.com/sdkforios'
   s.license      = 'Apache License, Version 2.0'
   s.author       = { 'Amazon Web Services' => 'amazonwebservices' }
-  s.platform     = :ios, '7.0'
+  s.platform     = :ios, :osx
+  s.ios.deployment_target = '7.0'
+  s.osx.deployment_target = '10.8'
   s.source       = { :git => 'https://github.com/mkeiser/aws-sdk-ios.git',
                      :tag => 'OSX_2.1.2'}
-  s.frameworks   = 'UIKit', 'Foundation', 'SystemConfiguration'
+  s.frameworks   = 'Foundation', 'SystemConfiguration'
+  s.ios.frameworks = 'UIKit'
   s.requires_arc = true
   s.dependency 'Bolts', '~> 1.1.0'
   s.dependency 'Mantle', '~> 1.4'
