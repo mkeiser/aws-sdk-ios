@@ -71,6 +71,13 @@ target :AWSS3 do
   default_pods
 end
 
+target :AWSS3_OSX do
+  platform :osx, "10.8"
+  xcodeproj 'AWSS3'
+  default_pods
+end
+
+
 target :AWSSES do
   xcodeproj 'AWSSES'
   link_with 'AWSSESTests'
