@@ -24,7 +24,6 @@
 #import "AWSMobileAnalyticsStringUtils.h"
 #import "AWSLogging.h"
 #import "AWSMObileAnalyticsDefaultSessionClient.h"
-#import <UIKit/UIKit.h>
 
 static NSSet *AWSMobileAnalyticsDefaultDeliveryClientRetryRequestCodes = nil;
 NSUInteger const AWSMobileAnalyticsDefaultDeliveryClientMaxOperations = 1000;
