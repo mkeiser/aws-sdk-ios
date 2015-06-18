@@ -13,11 +13,8 @@
  permissions and limitations under the License.
  */
 
-#import <UIKit/UIKit.h>
 #import "AWSMobileAnalyticsRandomUUIDGenerator.h"
 
-
-#define SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(v)  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedAscending)
 
 @implementation AWSMobileAnalyticsRandomUUIDGenerator 
 
@@ -30,7 +27,7 @@
 {
     NSString *uuidStr;
     
-    if (SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"6.0"))
+    if (NSClassFromString(@"NSUUID"))
     {
         uuidStr = [[NSClassFromString(@"NSUUID") performSelector:@selector(UUID)]
                    performSelector:@selector(UUIDString)];
