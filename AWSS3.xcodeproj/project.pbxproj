@@ -646,6 +646,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = EFD819FEAFD8889AA8E20587 /* Pods-AWSS3_OSX.debug.xcconfig */;
 			buildSettings = {
+				EXECUTABLE_EXTENSION = dylib;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
@@ -667,6 +668,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D9CC537E438ECCD57D2ACCA2 /* Pods-AWSS3_OSX.release.xcconfig */;
 			buildSettings = {
+				EXECUTABLE_EXTENSION = dylib;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
