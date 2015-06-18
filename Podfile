@@ -17,6 +17,12 @@ xcodeproj 'AWSCore'
 link_with 'AWSCoreTests', 'AWSiOSSDKAnalyticsTests'
 default_pods
 
+target :AWSCore_OSX do
+  platform :osx, "10.8"
+  xcodeproj 'AWSCore'
+  default_pods
+end
+
 target :AWSAutoScaling do
   xcodeproj 'AWSAutoScaling'
   link_with 'AWSAutoScalingTests'

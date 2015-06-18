@@ -49,6 +49,7 @@
 		D8EC12C81B33500C00999A52 /* AWSS3TransferManager.h in Headers */ = {isa = PBXBuildFile; fileRef = BDF55A0A1AB377010067F4F1 /* AWSS3TransferManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D8EC12C91B33500C00999A52 /* AWSS3Service.h in Headers */ = {isa = PBXBuildFile; fileRef = CEE7DE721AC1E1DA0095C4B7 /* AWSS3Service.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D8EC12CA1B33500C00999A52 /* AWSS3.h in Headers */ = {isa = PBXBuildFile; fileRef = BDF55A0C1AB377010067F4F1 /* AWSS3.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D8EC13BB1B336E2900999A52 /* libAWSCore_OSX.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D8EC13BA1B336E2900999A52 /* libAWSCore_OSX.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -122,6 +123,8 @@
 		CBE59F7C5A92F7A54CF4B4BB /* libPods-AWSS3.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AWSS3.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEE7DE721AC1E1DA0095C4B7 /* AWSS3Service.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWSS3Service.h; sourceTree = "<group>"; };
 		D8EC12CE1B33500C00999A52 /* libAWSS3_OSX.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAWSS3_OSX.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8EC13B81B336D3900999A52 /* libAWSCore_OSX.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAWSCore_OSX.a; path = ../../../Builds/Debug/libAWSCore_OSX.a; sourceTree = "<group>"; };
+		D8EC13BA1B336E2900999A52 /* libAWSCore_OSX.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAWSCore_OSX.a; path = ../../../Builds/Debug/libAWSCore_OSX.a; sourceTree = "<group>"; };
 		D9CC537E438ECCD57D2ACCA2 /* Pods-AWSS3_OSX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AWSS3_OSX.release.xcconfig"; path = "Pods/Target Support Files/Pods-AWSS3_OSX/Pods-AWSS3_OSX.release.xcconfig"; sourceTree = "<group>"; };
 		EFD819FEAFD8889AA8E20587 /* Pods-AWSS3_OSX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AWSS3_OSX.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AWSS3_OSX/Pods-AWSS3_OSX.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -148,6 +151,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8EC13BB1B336E2900999A52 /* libAWSCore_OSX.a in Frameworks */,
 				B341091EB33CD040A56B87E8 /* libPods-AWSS3_OSX.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -169,6 +173,8 @@
 		7D7D82B43AAE1FAA16A74BC2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D8EC13BA1B336E2900999A52 /* libAWSCore_OSX.a */,
+				D8EC13B81B336D3900999A52 /* libAWSCore_OSX.a */,
 				BD00FF401AB8B6D2004496EF /* libAWSCore.a */,
 				CBE59F7C5A92F7A54CF4B4BB /* libPods-AWSS3.a */,
 				83FFFA9D9E7890093BDD3C1F /* libPods-AWSS3_OSX.a */,
@@ -645,7 +651,12 @@
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"${SRCROOT}/Pods/Headers/**",
 				);
-				OTHER_LDFLAGS = "";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(BUILT_PRODUCTS_DIR)",
+				);
+				MACH_O_TYPE = mh_dylib;
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_NAME = AWSS3_OSX;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
@@ -661,7 +672,12 @@
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"${SRCROOT}/Pods/Headers/**",
 				);
-				OTHER_LDFLAGS = "";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/meister/Builds/Debug,
+				);
+				MACH_O_TYPE = mh_dylib;
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_NAME = AWSS3_OSX;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
