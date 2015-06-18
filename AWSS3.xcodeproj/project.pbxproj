@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8AC7B1256D49BCACC02D6748 /* libPods-AWSS3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CBE59F7C5A92F7A54CF4B4BB /* libPods-AWSS3.a */; };
+		B341091EB33CD040A56B87E8 /* libPods-AWSS3_OSX.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 83FFFA9D9E7890093BDD3C1F /* libPods-AWSS3_OSX.a */; };
 		BD00003A1AB8C526004496EF /* credentials.json in Resources */ = {isa = PBXBuildFile; fileRef = BD0000391AB8C526004496EF /* credentials.json */; };
 		BD0000581AB8E18E004496EF /* AWSTestUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = BD0000571AB8E18E004496EF /* AWSTestUtility.m */; };
 		BD00FF411AB8B6D2004496EF /* libAWSCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD00FF401AB8B6D2004496EF /* libAWSCore.a */; };
@@ -94,6 +95,7 @@
 /* Begin PBXFileReference section */
 		28721197CE495F3AD391E73E /* Pods-AWSS3.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AWSS3.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AWSS3/Pods-AWSS3.debug.xcconfig"; sourceTree = "<group>"; };
 		54CC6BB27F49823B5667DBD3 /* Pods-AWSS3.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AWSS3.release.xcconfig"; path = "Pods/Target Support Files/Pods-AWSS3/Pods-AWSS3.release.xcconfig"; sourceTree = "<group>"; };
+		83FFFA9D9E7890093BDD3C1F /* libPods-AWSS3_OSX.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AWSS3_OSX.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD0000391AB8C526004496EF /* credentials.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = credentials.json; path = AWSCoreTests/credentials.json; sourceTree = SOURCE_ROOT; };
 		BD0000561AB8E18E004496EF /* AWSTestUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AWSTestUtility.h; path = AWSCoreTests/AWSTestUtility.h; sourceTree = SOURCE_ROOT; };
 		BD0000571AB8E18E004496EF /* AWSTestUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AWSTestUtility.m; path = AWSCoreTests/AWSTestUtility.m; sourceTree = SOURCE_ROOT; };
@@ -119,7 +121,9 @@
 		BDF55A111AB377010067F4F1 /* s3-2006-03-01.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "s3-2006-03-01.json"; sourceTree = "<group>"; };
 		CBE59F7C5A92F7A54CF4B4BB /* libPods-AWSS3.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AWSS3.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEE7DE721AC1E1DA0095C4B7 /* AWSS3Service.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWSS3Service.h; sourceTree = "<group>"; };
-		D8EC12CE1B33500C00999A52 /* libAWSS3_OSX.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libAWSS3_OSX.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8EC12CE1B33500C00999A52 /* libAWSS3_OSX.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAWSS3_OSX.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9CC537E438ECCD57D2ACCA2 /* Pods-AWSS3_OSX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AWSS3_OSX.release.xcconfig"; path = "Pods/Target Support Files/Pods-AWSS3_OSX/Pods-AWSS3_OSX.release.xcconfig"; sourceTree = "<group>"; };
+		EFD819FEAFD8889AA8E20587 /* Pods-AWSS3_OSX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AWSS3_OSX.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AWSS3_OSX/Pods-AWSS3_OSX.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +148,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B341091EB33CD040A56B87E8 /* libPods-AWSS3_OSX.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,6 +160,8 @@
 			children = (
 				28721197CE495F3AD391E73E /* Pods-AWSS3.debug.xcconfig */,
 				54CC6BB27F49823B5667DBD3 /* Pods-AWSS3.release.xcconfig */,
+				EFD819FEAFD8889AA8E20587 /* Pods-AWSS3_OSX.debug.xcconfig */,
+				D9CC537E438ECCD57D2ACCA2 /* Pods-AWSS3_OSX.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -164,6 +171,7 @@
 			children = (
 				BD00FF401AB8B6D2004496EF /* libAWSCore.a */,
 				CBE59F7C5A92F7A54CF4B4BB /* libPods-AWSS3.a */,
+				83FFFA9D9E7890093BDD3C1F /* libPods-AWSS3_OSX.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -312,10 +320,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D8EC12CB1B33500C00999A52 /* Build configuration list for PBXNativeTarget "AWSS3_OSX" */;
 			buildPhases = (
+				3E13AAF14265B26C17A93FA0 /* Check Pods Manifest.lock */,
 				D8EC12B91B33500C00999A52 /* Sources */,
 				D8EC12BE1B33500C00999A52 /* Frameworks */,
 				D8EC12BF1B33500C00999A52 /* CopyFiles */,
 				D8EC12C51B33500C00999A52 /* Headers */,
+				9A808D5DD16C6E6CEC52AA2F /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -406,6 +416,36 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3E13AAF14265B26C17A93FA0 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9A808D5DD16C6E6CEC52AA2F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AWSS3_OSX/Pods-AWSS3_OSX-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -598,14 +638,15 @@
 		};
 		D8EC12CC1B33500C00999A52 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EFD819FEAFD8889AA8E20587 /* Pods-AWSS3_OSX.debug.xcconfig */;
 			buildSettings = {
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"${SRCROOT}/Pods/Headers/**",
 				);
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "AWSS3_OSX";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = AWSS3_OSX;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 			};
@@ -613,14 +654,15 @@
 		};
 		D8EC12CD1B33500C00999A52 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9CC537E438ECCD57D2ACCA2 /* Pods-AWSS3_OSX.release.xcconfig */;
 			buildSettings = {
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"${SRCROOT}/Pods/Headers/**",
 				);
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "AWSS3_OSX";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = AWSS3_OSX;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 			};
