@@ -14,7 +14,6 @@
  */
 
 #import <sys/xattr.h>
-#import <UIKit/UIKit.h>
 #import <Reachability/Reachability.h>
 #import "AWSMobileAnalyticsIOSSystem.h"
 #import "AWSMobileAnalyticsIOSLifeCycleManager.h"
