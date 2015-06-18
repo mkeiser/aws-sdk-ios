@@ -14,7 +14,9 @@
  */
 
 #import "AWSClientContext.h"
+#if TARGET_OS_IPHONE
 #import <UIKit/UIKit.h>
+#endif
 #import <sys/types.h>
 #import <sys/sysctl.h>
 #import <UICKeyChainStore/UICKeyChainStore.h>
@@ -63,12 +65,21 @@ NSString *const AWSClientContextKeychainInstallationIdKey = @"com.amazonaws.AWSC
         _appName = appName ? appName : AWSClientContextUnknown;
 
         //Device Details
+#if TARGET_OS_IPHONE
         UIDevice* currentDevice = [UIDevice currentDevice];
+#endif
         NSString *autoUpdatingLoaleIdentifier = [[NSLocale autoupdatingCurrentLocale] localeIdentifier];
+#if TARGET_OS_IPHONE
         _devicePlatform = [currentDevice systemName] ? [currentDevice systemName] : AWSClientContextUnknown;
         _deviceModel = [currentDevice model] ? [currentDevice model] : AWSClientContextUnknown;
+#else
+		_devicePlatform = @"OSX";
+		_deviceModel = @"MAC"; //TODO: get actual model
+#endif
         _deviceModelVersion = [self deviceModelVersionCode] ? [self deviceModelVersionCode] : AWSClientContextUnknown;
+#if TARGET_OS_IPHONE
         _devicePlatformVersion = [currentDevice systemVersion] ? [currentDevice systemVersion] : AWSClientContextUnknown;
+#endif
         _deviceManufacturer = @"apple";
         _deviceLocale = autoUpdatingLoaleIdentifier ? autoUpdatingLoaleIdentifier : AWSClientContextUnknown;
 
