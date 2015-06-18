@@ -122,7 +122,7 @@
 		BDF55A111AB377010067F4F1 /* s3-2006-03-01.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "s3-2006-03-01.json"; sourceTree = "<group>"; };
 		CBE59F7C5A92F7A54CF4B4BB /* libPods-AWSS3.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AWSS3.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEE7DE721AC1E1DA0095C4B7 /* AWSS3Service.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWSS3Service.h; sourceTree = "<group>"; };
-		D8EC12CE1B33500C00999A52 /* libAWSS3_OSX.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAWSS3_OSX.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8EC12CE1B33500C00999A52 /* libAWSS3_OSX.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libAWSS3_OSX.a; path = libAWSS3_OSX.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8EC13B81B336D3900999A52 /* libAWSCore_OSX.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAWSCore_OSX.a; path = ../../../Builds/Debug/libAWSCore_OSX.a; sourceTree = "<group>"; };
 		D8EC13BA1B336E2900999A52 /* libAWSCore_OSX.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAWSCore_OSX.a; path = ../../../Builds/Debug/libAWSCore_OSX.a; sourceTree = "<group>"; };
 		D9CC537E438ECCD57D2ACCA2 /* Pods-AWSS3_OSX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AWSS3_OSX.release.xcconfig"; path = "Pods/Target Support Files/Pods-AWSS3_OSX/Pods-AWSS3_OSX.release.xcconfig"; sourceTree = "<group>"; };
@@ -658,7 +658,7 @@
 				);
 				MACH_O_TYPE = mh_dylib;
 				OTHER_LDFLAGS = "$(inherited)";
-				PRODUCT_NAME = AWSS3_OSX;
+				PRODUCT_NAME = AWSS3;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 			};
@@ -680,7 +680,7 @@
 				);
 				MACH_O_TYPE = mh_dylib;
 				OTHER_LDFLAGS = "$(inherited)";
-				PRODUCT_NAME = AWSS3_OSX;
+				PRODUCT_NAME = AWSS3;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 			};

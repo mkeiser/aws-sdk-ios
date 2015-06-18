@@ -1014,7 +1014,7 @@
 		CEE7DE641AC1E0340095C4B7 /* AWSMobileAnalyticsERSService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWSMobileAnalyticsERSService.h; sourceTree = "<group>"; };
 		CEE82FAB1AD358F70090F3CE /* dynamodb-2012-08-10.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "dynamodb-2012-08-10.json"; path = "AWSDynamoDB/Resources/dynamodb-2012-08-10.json"; sourceTree = "<group>"; };
 		CEFBD4EA1ADEF199004358F3 /* AWSUtilityTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AWSUtilityTests.m; sourceTree = "<group>"; };
-		D8EC13B51B3356C900999A52 /* libAWSCore_OSX.dylib */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAWSCore_OSX.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8EC13B51B3356C900999A52 /* libAWSCore.dylib */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAWSCore.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8EC13B61B3365D000999A52 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/usr/lib/libsqlite3.dylib; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
@@ -1223,7 +1223,7 @@
 				BDF557521AB371490067F4F1 /* libAWSCore.a */,
 				BDF5575D1AB371490067F4F1 /* AWSCoreTests.xctest */,
 				BDB6EB821AB90E27004C4D80 /* AWSiOSSDKAnalyticsTests.xctest */,
-				D8EC13B51B3356C900999A52 /* libAWSCore_OSX.dylib */,
+				D8EC13B51B3356C900999A52 /* libAWSCore.dylib */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1895,7 +1895,7 @@
 			);
 			name = AWSCore_OSX;
 			productName = AWSCore;
-			productReference = D8EC13B51B3356C900999A52 /* libAWSCore_OSX.dylib */;
+			productReference = D8EC13B51B3356C900999A52 /* libAWSCore.dylib */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -2612,7 +2612,7 @@
 					"-weak_framework",
 					"\"AppKit\"",
 				);
-				PRODUCT_NAME = AWSCore_OSX;
+				PRODUCT_NAME = AWSCore;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 			};
@@ -2651,7 +2651,7 @@
 					"-weak_framework",
 					"\"AppKit\"",
 				);
-				PRODUCT_NAME = AWSCore_OSX;
+				PRODUCT_NAME = AWSCore;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 			};
