@@ -15,8 +15,7 @@ Pod::Spec.new do |s|
   s.source       = { :git => 'https://github.com/mkeiser/aws-sdk-ios.git',
                      :tag => 'OSX_2.1.2'}
   s.requires_arc = true
-  s.ios.dependency 'AWSCore', '2.1.2'
-  s.osx.dependency 'AWSCore_OSX', '2.1.2'
+  s.dependency 'AWSCore', '2.1.2'
   s.dependency 'Bolts', '~> 1.1.0'
   s.dependency 'Mantle', '~> 1.4'
   s.dependency 'TMCache', '~> 1.2.1'
