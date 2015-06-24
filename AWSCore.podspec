@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
   s.frameworks   = 'Foundation', 'SystemConfiguration'
   s.ios.frameworks = 'UIKit'
   s.requires_arc = true
-  s.dependency 'Bolts', '~> 1.1.0'
+  s.dependency 'Bolts', '~> 1.2.0'
   s.dependency 'Mantle', '~> 1.4'
   s.dependency 'XMLDictionary', '~> 1.4.0'
   s.dependency 'UICKeyChainStore', '~> 2.0'
